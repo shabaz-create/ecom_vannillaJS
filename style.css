@@ -1,1 +1,9 @@
 @import url("https://uilight.netlify.app/main.css");
+
+
+#products{
+    display: flex;
+    flex-wrap:wrap;
+    gap: 20px;
+    justify-content: center;
+}

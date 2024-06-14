@@ -40,13 +40,13 @@ for(let product of products.data){
 
         //product name
         const name=document.createElement("p");
-        name.className.add("card-des");
+        name.classList.add("card-des");
         name.innerText=product.name;
         descriptionContainer.appendChild(name);
 
         //price
         const price=document.createElement("p");
-        price.className.add("card-price");
+        price.classList.add("card-price");
         name.innerText=`Rs. ${product.name}`;
 
 
@@ -73,8 +73,8 @@ for(let product of products.data){
 
         
         const star=document.createElement("span");
-        star.classList.add("material-icons-outlined","star");
-        star.innerText="star";
+        star.classList.add("fa","fa-star","fa-1x","checked","star");
+        // star.innerText="star";
         ratings.appendChild(star);
 
         descriptionContainer.appendChild(ratings);
