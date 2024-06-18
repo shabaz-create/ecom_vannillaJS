@@ -6,4 +6,21 @@
     flex-wrap:wrap;
     gap: 20px;
     justify-content: center;
+    padding: 25px;
+}
+
+img{
+    max-height:200px;
+}
+
+#search-bar{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid blue;
+    color: white;
+    height: 25px;
+}
+
+#search-bar::placeholder{
+    color: white;
 }

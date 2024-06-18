@@ -7,35 +7,51 @@
     <title>HOME | Eocmm</title>
     <link type="text/css" rel="stylesheet" href="style.css"/>
     <link rel="icon" type="image/x-icon" href="./assets/shopping.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    
 </head>
 <body>
+     <header class="heading d-flex grow-shrink-basis align-center">
+          <div class="heading-title-icon d-flex grow-shrink-basis align-center">
+              <h1 class="heading-title">
+                  <a class="link" href="/">Shop Lift</a>
+              </h1>
+          </div>
+          <span>
+               <span class="material-symbols-outlined">
+                    search
+                    </span>
+          <input placeholder="Search your producs" id="search-bar"/>
+               </span>
+          <nav class="navigation">
+              <ul class="list-non-bullet">
+                  <li class="list-item-inline">
+                    <a href="#" class="link">
+                    <span class="material-symbols-outlined">
+                         home
+                         </span>
+                    </a>
+                  </li>
+                  <li class="list-item-inline">
+                    <a href="#" class="link">
+                         <span class="material-symbols-outlined">
+                              favorite
+                              </span>
+                    </a>
+                  </li>
+                  <li class="list-item-inline">
+                    <a href="#" class="link">
+                         <span class="material-symbols-outlined">
+                              shopping_cart
+                              </span>
+                         </a>
+                  </li>
+              </ul>
+          </nav>
+      </header>
+
+
     <div id="products"></div>
-    <!-- <div class="card card-vertical d-flex direction-column relative shadow">
-        <div class="card-image-container">
-             <img class="card-image" src="https://uilight.netlify.app/assets/shoes.jpg" alt="shoes">
-        </div>
-        <div class="card-details">
-             <div class="card-title">Premium Collection</div>
-             <div class="card-description">
-                  <p class="card-des">Men Sneakers</p>
-                  <p class="card-price">
-                     Rs. 1750
-                        <span class="price-strike-through">Rs. 2499</span>
-                     <span class="discount">(30% OFF)</span>
-                  </p>
-                  <p class="d-flex align-center">
-                    <span>4.8</span>
-                    <span class="fa fa-star fa-1x checked"></span>
-                  </p>
-             </div>
-             <div class="cta-btn">
-                  <button class="button btn-primary btn-icon cart-btn d-flex                          align-center justify-center gap cursor btn-margin">
-                  <img src="./assets/shopping-cart.png" width="25px" alt="cart"> 
-                   <span>Add To Cart</span> 
-                  </button>
-             </div>
-        </div>
-   </div> -->
    <script type="module" src="index.js"></script>
 </body>
 </html>

@@ -1,9 +1,7 @@
-import { products } from "./db/products.js"
-console.log(products.data);
-let i=0;
+import { products } from "./db/products.js";
+
 const productContainer=document.getElementById("products");
 for(let product of products.data){
-    console.log(i++)
     const cardContainer=document.createElement("div");
     cardContainer.classList.add(
         "card",
@@ -49,6 +47,10 @@ for(let product of products.data){
         price.classList.add("card-price");
         name.innerText=`Rs. ${product.name}`;
 
+
+        const newPrice=document.createElement("span");
+        newPrice.innerText=`Rs. ${product.newPrice}`;
+        price.appendChild(newPrice);
 
         const oldPrice=document.createElement("span");
         oldPrice.classList.add("price-strike-through");
@@ -113,4 +115,10 @@ for(let product of products.data){
 
         productContainer.appendChild(cardContainer);
 }
-console.log(productContainer);
+
+// let data;
+// fetch('https://fakestoreapi.com/products/1')
+//             .then(res=>res.json())
+//             .then(json=>console.log(json))
+
+//  console.log(data)
