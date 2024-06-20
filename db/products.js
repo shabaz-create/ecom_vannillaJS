@@ -25,6 +25,7 @@ const products = {
       isProductInExpressDelivery: true,
       isTrending: true,
       isExchangeAvailable: true,
+      isInCart:false
       },
       {
     id: 'I9fPyKG3JbR7XcT',
@@ -46,7 +47,8 @@ const products = {
     inStock: true,
     isProductInExpressDelivery: false,
     isTrending: true,
-    isExchangeAvailable: true
+    isExchangeAvailable: true,
+    isInCart:false
   },
       {
     id: 'EnR6VrG1A7aM4wY',
@@ -68,7 +70,8 @@ const products = {
     inStock: true,
     isProductInExpressDelivery: true,
     isTrending: true,
-    isExchangeAvailable: true
+    isExchangeAvailable: true,
+    isInCart:false
   },
       {
     id: 'gDQF2iK6cJyV9Zt',
@@ -90,7 +93,8 @@ const products = {
     inStock: true,
     isProductInExpressDelivery: false,
     isTrending: false,
-    isExchangeAvailable: true
+    isExchangeAvailable: true,
+    isInCart:false
   },
       {
     id: 'vLgT6aPfMwY2iKR',
@@ -112,7 +116,8 @@ const products = {
     inStock: true,
     isProductInExpressDelivery: true,
     isTrending: true,
-    isExchangeAvailable: true
+    isExchangeAvailable: true,
+    isInCart:false
   },
       {
     id: 'Jh8RyNmKqPb3aMx',
@@ -134,7 +139,8 @@ const products = {
     inStock: true,
     isProductInExpressDelivery: false,
     isTrending: false,
-    isExchangeAvailable: true
+    isExchangeAvailable: true,
+    isInCart:false
   },
       {
     id: 'r3F5nTaLqB7j2Kx',
@@ -156,7 +162,8 @@ const products = {
     inStock: true,
     isProductInExpressDelivery: true,
     isTrending: false,
-    isExchangeAvailable: true
+    isExchangeAvailable: true,
+    isInCart:false
   },
       {
     id: 'Vbn0sLeYpN8K2nW',
@@ -178,7 +185,8 @@ const products = {
     inStock: true,
     isProductInExpressDelivery: false,
     isTrending: true,
-    isExchangeAvailable: true
+    isExchangeAvailable: true,
+    isInCart:false
   },
       {
     id: 'j7M9xKpRfA3EwVQ',
@@ -200,7 +208,8 @@ const products = {
     inStock: true,
     isProductInExpressDelivery: true,
     isTrending: true,
-    isExchangeAvailable: true
+    isExchangeAvailable: true,
+    isInCart:false
   }
     ]
      

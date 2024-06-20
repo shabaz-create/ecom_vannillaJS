@@ -1,11 +1,12 @@
-import { products } from "./db/products.js";
+const storedProducts = localStorage.getItem('cartProducts');
+const cartProducts = storedProducts ? JSON.parse(storedProducts) : [];
 
 const productContainer = document.getElementById("products");
-
+console.log(cartProducts);
 // Rendering the products
 function render(products) {
     productContainer.innerHTML = ''; // Clearing existing content
-    products.data.forEach(product => {
+    products.forEach(product => {if(product.isInCart){
         const cardContainer = document.createElement("div");
         cardContainer.classList.add(
             "card",
@@ -95,7 +96,7 @@ function render(products) {
         cartIcon.classList.add("material-icons-outlined");
         cartIcon.innerText = "shopping-cart";
         cartButton.appendChild(cartIcon);
-        const cartText = product.isInCart ? "Remove From Cart" : "Add To Cart";
+        const cartText = "Remove from cart";
         cartButton.innerText = cartText;
         ctaButton.appendChild(cartButton);
         cardDetailsContainer.appendChild(ctaButton);
@@ -105,27 +106,28 @@ function render(products) {
 
         // Append card container to product container
         productContainer.appendChild(cardContainer);
-    });
+}});
 }
 
 // Initial rendering of products
-render(products);
+render(cartProducts);
 
-// Event delegation for Add to Cart functionality
+
 productContainer.addEventListener("click", (event) => {
     if (event.target.classList.contains("cart-btn")) {
-       
         const productId = event.target.id;
-        const clickedProduct = products.data.find(product => product.id === productId);
-    
+        const clickedProduct = cartProducts.find(product => product.id === productId);
+        console.log(clickedProduct)
         if (clickedProduct) {
             clickedProduct.isInCart = !clickedProduct.isInCart;
-            updateLocalStorage(products.data);
+            updateLocalStorage(cartProducts);
 
-            render(products); // Update after modifying product
+            render(cartProducts); // Update after modifying product
         }
     }
 });
+
+
 
 function updateLocalStorage(products) {
     localStorage.setItem('cartProducts', JSON.stringify(products));
